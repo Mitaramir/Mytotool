@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+body {
+    background-color: #f1f2f1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 4em;
+    color: #00a0d7;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    color: #00a0d7;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.liste_titre {
+    padding: 5% 0% 0% 0%;
+    font-size: 2em;
+}
+
+.form1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.liste {
+    background-color: #00a0d7;
+    padding: 2%;
+    border: 5px solid #000;
+    border-radius: 5px;
+}
+
+.btn {
+    position: relative;
+    display: inline-flex;
+    width: 180px;
+    height: 55px;
+    margin: 0 15px;
+    perspective: 1000px;
+}
+
+.btn a {
+    font-size: 19px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn a:before,
+.btn a:after {
+    position: absolute;
+    content: "Supprimer";
+    height: 55px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.btn a:before {
+    color: #000;
+    background: #d9d9d9;
+    transform: rotateY(0deg) translateZ(25px);
+}
+
+.btn a:after {
+    color: #000;
+    background: #f44336;
+    transform: rotateX(90deg) translateZ(25px);
+}
+
+.btn a:hover {
+    transform: translateZ(-25px) rotateX(-90deg);
+}
+
+.btn_deco {
+    position: relative;
+    display: inline-flex;
+    width: 180px;
+    height: 55px;
+    margin: 0 15px;
+    perspective: 1000px;
+    top: -145px;
+    left: 83%;
+}
+
+.btn_deco a {
+    font-size: 19px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn_deco a:before,
+.btn_deco a:after {
+    position: absolute;
+    content: "Déconnexion";
+    height: 55px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.btn_deco a:before {
+    color: #000;
+    background: #d9d9d9;
+    transform: rotateY(0deg) translateZ(25px);
+}
+
+.btn_deco a:after {
+    color: #000;
+    background: #f44336;
+    transform: rotateX(90deg) translateZ(25px);
+}
+
+.btn_deco a:hover {
+    transform: translateZ(-25px) rotateX(-90deg);
+}
+
+button.btn_modif {
+    position: relative;
+    display: inline-flex;
+    width: 180px;
+    height: 55px;
+    margin: 0px 15px;
+    perspective: 1000px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f2f1;
+    border: 5px solid #000;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+button.btn_modif:hover {
+    background-color: green;
+    color: #fff;
+    transform: scale(1.1);
+    transition: all .5s ease;
+}
+
+.input {
+    background-color: #f1f2f1;
+    width: -webkit-fill-available;
+    height: 25px;
+    border: none;
+    border-bottom: 2px solid #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.input:focus-visible {
+    background-color: #b8b2ff;
+    outline: none;
+}
+
+.space {
+    height: 100px;
+}
+
+.pad {
+    padding: 2%;
+    background-color: #adadad;
+    border: 3px solid #000;
+    border-radius: 5px;
+}
+
+
+/* Page connexion */
+
+.form2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.etape2 {
+    padding-top: 5%;
+}
+
+.all {
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Page mauvais identifiant/mdp */
+
+.btn_redirection {
+    position: relative;
+    display: inline-flex;
+    width: 180px;
+    height: 55px;
+    margin: 0 15px;
+    perspective: 1000px;
+    justify-content: flex-end;
+}
+
+.btn_redirection a {
+    font-size: 19px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn_redirection a:before,
+.btn_redirection a:after {
+    position: absolute;
+    content: "Réessayer";
+    height: 55px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.btn_redirection a:before {
+    color: #000;
+    background: #d9d9d9;
+    transform: rotateY(0deg) translateZ(25px);
+}
+
+.btn_redirection a:after {
+    color: #000;
+    background: #f44336;
+    transform: rotateX(90deg) translateZ(25px);
+}
+
+.btn_redirection a:hover {
+    transform: translateZ(-25px) rotateX(-90deg);
+}

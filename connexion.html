@@ -1,0 +1,41 @@
+<!-- Page de connexion à la liste des taches -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Todoliste</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="all">
+        <div class="titre">
+            <h1>MyTotool</h1>
+        </div>
+        <div class="center">
+            <!-- le formulaire envoie vers la page "login_ddbase" pour verifier si le compte existe -->
+            <form class="form2" action="login_ddbase.php" method="post">
+                <div class="etape1 ">
+                    <label for="nom">Identifiant : </label>
+                    <input class="input" type="text" name="login" id="identifiant">
+                </div>
+                <div class="etape2 ">
+                    <label for="enter">Mot de passe : </label>
+                    <input class="input" type="password" name="password" id="mp">
+                </div>
+                </br>
+                <div class="center">
+                    <button class="formsend btn_modif  type=" submit " value="Ok " name='Envoyer'>Se connecter</button>
+              </div>
+        </form>
+    </div>
+</div>
+</body>
+
+</html>
